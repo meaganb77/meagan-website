@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Crazy Brownie</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #fff;
+      color: #333;
+    }
+
+    /* Main header style */
+    header {
+      background-color: #ff77b5;
+      color: white;
+      padding: 20px 0;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.5em;
+    }
+
+    header nav {
+      margin-top: 15px;
+    }
+
+    header nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-size: 1.2em;
+      text-transform: uppercase;
+    }
+
+    header nav a:hover {
+      text-decoration: underline;
+    }
+
+    /* Container for content */
+    .container {
+      padding: 40px 20px;
+    }
+
+    .container h2 {
+      text-align: center;
+      color: #ff77b5;
+      font-size: 2em;
+    }
+
+    /* Footer style */
+    footer {
+      background-color: #ff77b5;
+      color: white;
+      text-align: center;
+      padding: 15px;
+    }
+
+    /* About Us Section */
+    .about-section {
+      display: flex;
+      justify-content: space-between;
+      padding: 40px;
+    }
+
+    .about-text {
+      width: 45%;
+      font-size: 1.1em;
+    }
+
+    .about-image {
+      width: 45%;
+    }
+
+    .about-image img {
+      width: 100%;
+      border-radius: 10px;
+    }
+
+    /* Products Section */
+    .products {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 30px;
+      margin-top: 30px;
+    }
+
+    .product-card {
+      background-color: #f8f8f8;
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      padding: 20px;
+      text-align: center;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .product-card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 10px;
+    }
+
+    .product-card h3 {
+      color: #ff77b5;
+      margin-top: 15px;
+    }
+
+    .product-card p {
+      color: #555;
+      font-size: 1.1em;
+    }
+
+    .product-card .price {
+      color: #ff63a1;
+      font-size: 1.3em;
+      font-weight: bold;
+      margin-top: 10px;
+    }
+
+    .product-card button {
+      background-color: #ff77b5;
+      color: white;
+      padding: 10px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 1.1em;
+      margin-top: 10px;
+    }
+
+    .product-card button:hover {
+      background-color: #ff63a1;
+    }
+
+    /* Checkout Section */
+    .checkout {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 40px;
+    }
+
+    .checkout form {
+      width: 400px;
+      background-color: #f8f8f8;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .checkout form input,
+    .checkout form select,
+    .checkout form button {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      border-radius: 5px;
+      border: 1px solid #ddd;
+    }
+
+    .checkout form button {
+      background-color: #ff77b5;
+      color: white;
+      font-size: 1.1em;
+    }
+
+    .checkout form button:hover {
+      background-color: #ff63a1;
+    }
+
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <h1>Crazy Brownie</h1>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#about">About Us</a>
+      <a href="#products">Products</a>
+      <a href="#checkout">Checkout</a>
+    </nav>
+  </header>
+
+  <!-- Home Section -->
+  <section id="home" class="container">
+    <h2>Welcome to Crazy Brownie</h2>
+    <p>Your one-stop destination for the best brownies and treats! Indulge in our delicious homemade brownies, made with premium ingredients and baked with love.</p>
+  </section>
+
+  <!-- About Us Section -->
+  <section id="about" class="about-section">
+    <div class="about-text">
+      <h2>About Us</h2>
+      <p>At Crazy Brownie, we specialize in creating delicious and mouth-watering brownies, made with love and the finest ingredients. Our mission is to bring joy to every bite with freshly baked treats for all occasions and to create the most delicious brownies you've ever tasted..</p>
+    </div>
+    <div class="about-image">
+      <img src="logo.jpg">
+    </div>
+  </section>
+
+  <!-- Products Section -->
+  <section id="products" class="container">
+    <h2>Our Products</h2>
+    <div class="products">
+      <!-- Product 1 -->
+      <div class="product-card">
+        <img src="chocolate.jpg">
+        <h3>Chocolate Brownie</h3>
+        <p>A rich, fudgy chocolate brownie topped with chocolate ganache.</p>
+        <div class="price">₱250.00</div>
+        <button>Add to Cart</button>
+      </div>
+      <!-- Product 2 -->
+      <div class="product-card">
+        <img src="caramel.jpg">
+        <h3>Caramel Brownie</h3>
+        <p>Our signature brownie, infused with a caramel swirl.</p>
+        <div class="price">₱235.00</div>
+        <button>Add to Cart</button>
+      </div>
+      <!-- Product 3 -->
+      <div class="product-card">
+        <img src="s'mores.jpeg">
+        <h3>S'mores Brownie</h3>
+        <p>Decadent chocolate brownie topped with melted marshmallows, graham cracker pieces, and chocolate drizzle.</p>
+        <div class="price">₱235.00</div>
+        <button>Add to Cart</button>
+      </div>
+      <!-- Product 4 -->
+      <div class="product-card">
+        <img src="bueno.jpg">
+        <h3>Bueno Brownie</h3>
+        <p>Thick, fudgey & gooey chocolate Kinder Bueno brownies with Kinder Bueno and Kinder chocolate chunks!</p>
+        <div class="price">₱300.00</div>
+        <button>Add to Cart</button>
+      </div>
+      <!-- Product 5 -->
+      <div class="product-card">
+        <img src="kitkat.jpg">
+        <h3>KitKat Brownie</h3>
+        <p>Deliciously fudgey chocolate chip KitKat brownies with a gooey chocolate chip brownie base, stuffed to the brim with KitKats! </p>
+        <div class="price">₱285.00</div>
+        <button>Add to Cart</button>
+      </div>
+
+      <!-- Product 6 -->
+      <div class="product-card">
+        <img src="peanut.jpg">
+        <h3>Peanut Butter Brownie</h3>
+        <p>Peanut butter and chocolate come together in this divine brownie.</p>
+        <div class="price">₱200.00</div>
+        <button>Add to Cart</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Checkout Section -->
+  <section id="checkout" class="checkout">
+    <h2>Checkout</h2>
+    <form>
+      <input type="text" placeholder="Full Name" required>
+      <input type="email" placeholder="Email Address" required>
+      <input type="text" placeholder="Shipping Address" required>
+      <select required>
+        <option value="">Select Payment Method</option>
+        <option value="credit_card">Credit Card</option>
+        <option value="paypal">PayPal</option>
+        <option value="apple_pay">Apple Pay</option>
+      </select>
+      <button type="submit">Place Order</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Crazy Brownie | All Rights Reserved</p>
+  </footer>
+
+  <script>
+    // Placeholder JavaScript for now
+    // Could add form validation or dynamic behavior in the future
+  </script>
+
+</body>
+</html>
+
